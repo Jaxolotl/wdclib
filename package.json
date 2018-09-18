@@ -1,6 +1,6 @@
 {
   "name": "@jaxolotl/wdclib",
-  "version": "2.4.0-beta.1.1",
+  "version": "2.4.0-beta.1.2",
   "description": "Required Library to bridge javascript with Tableau. Use the scripts below to create the combined shim library. i.e. npm run-script build_and_copy",
   "scripts": {
     "build": "webpack --progress --profile --colors",
@@ -70,7 +70,7 @@
     "eslint-watch": "^3.1.2",
     "fs.extra": "^1.3.2",
     "jest": "^20.0.4",
-    "jest-cli": "^20.0.4",
+    "jest-cli": "~23.6.0",
     "webpack": "^3.5.5"
   },
   "dependencies": {
@@ -83,7 +83,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tabloids/wdclib.git"
+    "url": "git+https://github.com/Jaxolotl/wdclib.git"
   },
   "keywords": [
     "Tableau",
@@ -96,7 +96,7 @@
   "author": "Tableau Software",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Tabloids/wdclib/issues"
+    "url": "https://github.com/Jaxolotl/wdclib/issues"
   },
-  "homepage": "https://github.com/Tabloids/wdclib#readme"
+  "homepage": "https://github.com/Jaxolotl/wdclibb#readme"
 }
