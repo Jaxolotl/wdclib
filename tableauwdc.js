@@ -1,6 +1,6 @@
 /* globals require, qt */
 
-import { copyFunctions } from './Utilities';
+import { copyFunctions, linkObjectProperties, tableauProperties } from './Utilities';
 import Shared from './Shared';
 import NativeDispatcher from './NativeDispatcher';
 import SimulatorDispatcher from './SimulatorDispatcher';
@@ -95,7 +95,7 @@ export function init () {
                 // Once the native code tells us everything here is done, we should have all the expected objects inserted into js
                 dispatcher = new NativeDispatcher(channel.objects);
 
-                window.tableau = channel.objects.tableau;
+                linkObjectProperties(channel.objects.tableau, window.tableau, tableauProperties);
 
                 shared.changeTableauApiObj(window.tableau);
 
